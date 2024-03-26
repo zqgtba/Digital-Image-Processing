@@ -1,0 +1,10 @@
+  [image, descrips, locs] = sift('scene.pgm');
+  a=imread('basmati.pgm');
+  b=imread('book.pgm');
+  c=imread('box.pgm');
+  d=imread('scene.pgm');
+  subplot(2,2,1),imshow(a);
+  subplot(2,2,2),imshow(b);
+  subplot(2,2,3),imshow(c);
+  subplot(2,2,4),imshow(d);
+  showkeys(image, locs);
